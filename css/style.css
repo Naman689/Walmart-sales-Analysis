@@ -1,0 +1,407 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.gif{
+  left:30px;
+   text-align: justify;
+  font-size: 1.5rem;
+
+  margin-bottom:5px;
+  margin-left: 20px;
+  margin-right: 20px;
+ 
+  
+}
+.logo{
+  margin-left: 30px;
+}
+ol{
+	text-align: justify;
+  font-size: 1.5rem;
+  background:#e6ffff;
+  margin-bottom:50px;
+  margin-left: 40px;
+  margin-right: 20px;
+	
+}
+
+ul{
+	text-align: justify;
+  font-size: 1.5rem;
+  background:#e6ffff;
+  margin-bottom:50px;
+  margin-left: 40px;
+  margin-right: 20px;
+	
+}
+
+.ex{
+	font-size: 3rem;
+	
+}
+.p2{
+	 text-align: justify;
+
+	font-size: 1.5rem;
+	margin-bottom:50px;
+	 margin-left: 20px;
+  margin-right: 20px;
+	
+}
+
+body{
+	
+	background:#e6ffff;
+
+}
+
+.img1
+{
+margin-left: 300px;
+margin-top: 30px;
+margin-bottom:50px;
+}
+.img2
+{
+margin-left: 150px;
+margin-top: 30px;
+margin-bottom:50px;
+
+
+}
+.img3
+{
+margin-left: 100px;
+margin-top: 30px;
+margin-bottom:50px;
+
+
+}
+.img4
+{
+
+margin-left: 30px;
+margin-top: 30px;
+margin-bottom:50px;
+
+
+}
+.link{
+    color: #000;
+}
+
+p{
+ font-size: 2rem;
+
+ 
+}
+
+
+h6{
+ font-size: 5rem;
+ color: black;
+ margin-left: 50px;
+ margin-top: 30px;
+}
+.container{
+  margin-left: 50px;
+  margin-top: 250px;
+}
+.con{
+  margin-left: 550px;
+  margin-top: 50px;
+}
+
+h6 img{
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image 
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+*/
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: black;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('bg2.jpg') no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#home h1{
+    color:white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+
+/* Clients Section */
+#client-section{ 
+    position: relative;
+}
+.footer{
+    position: absolute;
+    background: url('bg3.png');
+    background: rgba(0, 0, 0, 0.87);
+    width: 100%;
+    height: 40%;
+    right: 0px;
+}
+
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 40px;
+}
+
+#clients img{
+    height: 50px;
+}
+
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    background: url('images/contact.png') no-repeat center center/cover; 
+
+}
+#contact-box{
+    
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    padding-left: 60px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+.btn1{
+ padding: 6px 20px;
+    border: 2px solid white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+
+}
+
+
+
+/* Utility Classes */
+.h-primary{
+	
+    font-family: 'Bree Serif', serif;
+    font-size: 2.8rem;
+    padding: 12px,20px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+}
+
+/* .btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+} */
+.btn {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+  .btn:hover, .btn:focus {
+    color: #fff;
+    outline: 0;
+  }
+  
+  .first {
+      right: 100px;
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  }
+  .first:hover {
+    box-shadow: 0 0 40px 40px #e74c3c inset;
+  }
+
+  .second {
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  }
+  .second:hover {
+    box-shadow: 0 0 40px 40px #e74c3c inset;
+  }
+  
+
+
+.center{
+    text-align: center;
+    color: antiquewhite;
+    /* padding-top: 3%; */
+}
+

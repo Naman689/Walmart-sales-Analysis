@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Walmart Sales Analysis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   
+        <h6 ><img  src="images/images.png"  width="100" height="70"> Walmart Sales Analysis </h6>
+       
+  
+
+    <section id="home">
+
+<form action="data/mall.csv" method="get">
+
+             <button class="btn first" type="submit">view details</button></form>
+
+        <form action="data/dendogram.py" method="get">
+  
+  <button class="btn second" type="submit">Analysis using dendogram</button>
+  
+</form>
+        <form action="data/scatterplot.py" method="get">
+
+  <button class="btn second" type="submit">Analysis using scatterplot</button>
+
+</form>
+
+    </section>
+
+    <p align="center"> With an online revenue of almost US$15 billion and a growth rate of 43%, Walmart is able to take the second place within eCommerce in the United States. This is largely due to a versatile online store with products in various categories including Electronics & Media. It is the largest private employer in the world</p>
+
+    <img class="img1" src="images/intro.gif" align="center" alt="Italian Trulli">
+
+    <p  class="gif">The main challenge of this project for me is seasonal sales. Some seasons have higher sales values like Thanksgiving, Black Friday and Christmas. These seasonal effects make the data highly non-stationary. Dealing with non-stationary data is not easy. There are many ways to solve this problem.
+
+<ol >
+<li>Differencing : We can calculate the difference of consecutive terms in data. Differencing is generally done to get rid of the varying average.</li>
+<li>Seasonal Differencing : The idea behind this technique is taking the difference of same seasons like the difference between 2010 and 2011 for the first week of January.</li>
+<li>Transforming Data: This technique is generally used for non-constant variances. We can transform data with taking log, square root or power transform, mainly. We can also shift the data.</li>
+</ol>
+
+</p>
+ 
+     
+
+    
+	
+	<h2 class="ex" align="center"  >  Explorations    </h2>
+	
+	 <img class="img2" src="images/plot1.png" align="center" alt="Italian Trulli">
+	 
+	 <p class="p2">When we look at the average sales monthly, it is obviously seen that November and December have higher sales. To make deep analysis, I looked at the weekly sales with corresponding week numbers.</p>
+
+    <img class="img3" src="images/plot2.png" align="center" alt="Italian Trulli">
+	
+	<ul>
+	    <li>From the graph, we can understand easily 51st and 47th weeks have higher sales. It means that higher demands in whole year belong to Christmas, Thanksgiving and Black Friday seasons. 50th and 49th weeks are following top 2. And, it is not obviously seen from the graph but I found it from values in project that 22nd week is in the top 5. It means that after schools are closed at the end of the May, people prefer to shop for summer or holiday.</li>
+
+
+        <li>Another interesting exploration is that when I looked at the top highest sales, I found it in Thanksgiving time. But, when we look at the graph above, Christmas has higher averages. It means that, maybe Thanksgiving week has higher values individually for some stores and some departments but when we take the average and sort them, Christmas is the best for general average weekly sales.</li>
+
+        <li>Although during other months sales are closed to each others, January has the least sales average. This is the result of November and December high sales. After two high sales month, people prefer to pay less on January.</li>
+   <ul>
+	
+	<img class="img1" src="images/plot3.png" align="center" alt="Italian Trulli">
+	
+	
+    <img class="img2" src="images/plot4.png" align="center" alt="Italian Trulli">
+		
+   <p class="p2">From pie plot and box plot above, we can understand that there are mainly 3 types of Walmart stores in the data and Walmart categorized them according to sizes. Type A is the biggest store, B is medium and C is the smallest. And, nearly half of the stores in the data are Type A stores which are biggest.
+   </p>
+
+    <img class="img4" src="images/plot5.png" align="center" alt="Italian Trulli">
+	
+	<ul>
+        <li>In the graph above, red line shows the average holiday sales and green line represents the average non-holiday sales. According to lines, holiday average is higher than non-holiday, as expected.</li>
+        <li>It is obviously seen from the graph that size of the store is directly proportional to weekly sales. Bigger stores have higher average sales.</li>
+        <li>And, it is interesting that according to this graph, Thanksgiving sales are shown higher than Christmas but we know from the weekly graph, 51th week is the best. When I looked deeper to the data, I realized that Walmart assigned Christmas sales to the 31-Dec-10, 30-Dec-11, 28-Dec-12, 27-Dec-13. But we know that people generally do their Christmas shopping before last week of the year. So, it is not a good idea to assign Christmas sale season to the last week of the year.</li>
+    </ul>
+	
+	<section id="contact">
+        <h1 class="h-primary ">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="10" rows="5"></textarea>
+                </div >
+                <div class="form-group">
+                    <button class = "btn1" >Save </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="footer" >
+        <h1 class="h-primary center">Follow Us</h1>
+        <div id="clients">
+            <div class="client-item">
+                <a href="https://www.instagram.com/"><img src="images/insta.jpg" alt="Our Client"></a>   
+            </div>
+            <div class="client-item">
+                <a href="https://www.facebook.com/"><img src="images/fb.png" alt="Our Client"></a>
+            </div>        
+            <div class="client-item">
+                <a href="https://www.twitter.com/"><img src="images/twitter.png" alt="Our Client"></a>
+            </div>		
+    </section>
+</div> 
+</body>
+</html>
